@@ -16,7 +16,7 @@
 		"url": "https://github.com/olyop/eslint-config.git"
 	},
 	"files": [
-		"dist"
+		"index.js"
 	],
 	"scripts": {
 		"postpublish": "npm run push",
