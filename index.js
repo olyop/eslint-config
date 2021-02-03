@@ -1,8 +1,6 @@
 module.exports = {
-	parser: "@typescript-eslint/parser",
 	extends: [
-		"airbnb-typescript",
-		"plugin:@typescript-eslint/eslint-recommended",
+		"airbnb-typescript/base",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
 		"plugin:promise/recommended",
@@ -12,23 +10,15 @@ module.exports = {
 	plugins: [
 		"node",
 		"import",
-		"promise",
-		"@typescript-eslint",
+		"promise"
 	],
 	parserOptions: {
 		sourceType: "module",
-		ecmaFeatures: { jsx: true },
-		project: "./tsconfig.eslint.json",
 	},
 	env: {
 		node: true,
 		es2020: true,
 		browser: true,
-	},
-	settings: {
-		react: {
-			pragma: "createElement",
-		},
 	},
 	rules: {
 		"radix": "off",
@@ -37,34 +27,23 @@ module.exports = {
 		"arrow-parens": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
-		"react/prop-types": "off",
 		"no-await-in-loop": "off",
 		"no-nested-ternary": "off",
 		"node/no-process-env": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
-		"jsx-a11y/no-autofocus": "off",
 		"no-restricted-globals": "off",
 		"array-bracket-spacing": "off",
 		"node/no-missing-import": "off",
-		"react/no-children-prop": "off",
 		"promise/catch-or-return": "off",
 		"implicit-arrow-linebreak": "off",
-		"jsx-a11y/media-has-caption": "off",
-		"react/no-unused-prop-types": "off",
 		"node/no-unpublished-import": "off",
-		"react-hooks/exhaustive-deps": "off",
-		"react/require-default-props": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
 		"@typescript-eslint/comma-spacing": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
-		"jsx-a11y/click-events-have-key-events": "off",
-		"jsx-a11y/label-has-associated-control": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
-		"jsx-a11y/control-has-associated-label": "off",
 		"node/no-unsupported-features/es-syntax": "off",
-		"jsx-a11y/no-static-element-interactions": "off",
 		"@typescript-eslint/no-floating-promises": "off",
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
@@ -80,10 +59,6 @@ module.exports = {
 			"error",
 			"never"
 		],
-		"react/jsx-indent": [
-			"error",
-			"tab"
-		],
 		"linebreak-style": [
 			"error",
 			"windows"
@@ -92,17 +67,9 @@ module.exports = {
 			"error",
 			"after"
 		],
-		"react/jsx-indent-props": [
-			"error",
-			"tab"
-		],
 		"object-curly-spacing": [
 			"error",
 			"always"
-		],
-		"react/jsx-fragments": [
-			"error",
-			"element"
 		],
 		"@typescript-eslint/semi": [
 			"error",
@@ -120,12 +87,6 @@ module.exports = {
 			"error",
 			{
 				args: "none",
-			},
-		],
-		"react/jsx-no-duplicate-props": [
-			"error",
-			{
-				ignoreCase: false,
 			},
 		],
 		"@typescript-eslint/comma-dangle": [
@@ -163,10 +124,6 @@ module.exports = {
 		"max-len": [
 			"error",
 			{ code: 120 },
-		],
-		"react/jsx-tag-spacing": [
-			"error",
-			{ beforeSelfClosing: "never" },
 		],
 		"@typescript-eslint/indent": [
 			"error",
