@@ -18,7 +18,7 @@
 	"scripts": {
 		"postpublish": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
-		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push -u origin main"
+		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push"
 	},
 	"peerDependencies": {
 		"eslint-plugin-import": "^2.22.0",
