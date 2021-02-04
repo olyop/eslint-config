@@ -1,16 +1,10 @@
 module.exports = {
 	extends: [
 		"airbnb-typescript/base",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:@typescript-eslint/recommended-requiring-type-checking",
-		"plugin:promise/recommended",
-		"plugin:import/typescript",
 		"plugin:node/recommended",
 	],
 	plugins: [
-		"node",
-		"import",
-		"promise"
+		"node"
 	],
 	parserOptions: {
 		sourceType: "module",
