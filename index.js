@@ -2,9 +2,11 @@ module.exports = {
 	extends: [
 		"airbnb-typescript/base",
 		"plugin:node/recommended",
+		"plugin:promise/recommended",
 	],
 	plugins: [
-		"node"
+		"node",
+		"promise",
 	],
 	parserOptions: {
 		sourceType: "module",
@@ -43,39 +45,39 @@ module.exports = {
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"no-mixed-spaces-and-tabs": [
 			"error",
-			"smart-tabs"
+			"smart-tabs",
 		],
 		"import/extensions": [
 			"error",
-			"never"
+			"never",
 		],
 		"eol-last": [
 			"error",
-			"never"
+			"never",
 		],
 		"linebreak-style": [
 			"error",
-			"windows"
+			"windows",
 		],
 		"operator-linebreak": [
 			"error",
-			"after"
+			"after",
 		],
 		"object-curly-spacing": [
 			"error",
-			"always"
+			"always",
 		],
 		"@typescript-eslint/semi": [
 			"error",
-			"never"
+			"never",
 		],
 		"comma-dangle": [
 			"error",
-			"always-multiline"
+			"always-multiline",
 		],
 		"@typescript-eslint/quotes": [
 			"error",
-			"double"
+			"double",
 		],
 		"@typescript-eslint/no-unused-vars": [
 			"error",
@@ -85,7 +87,7 @@ module.exports = {
 		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
-			"only-multiline"
+			"only-multiline",
 		],
 		"@typescript-eslint/naming-convention": [
 			"error",
