@@ -10,12 +10,6 @@ module.exports = {
 	],
 	parserOptions: {
 		sourceType: "module",
-		project: "./tsconfig.json",
-	},
-	env: {
-		node: true,
-		es2020: true,
-		browser: true,
 	},
 	rules: {
 		"radix": "off",
