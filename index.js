@@ -2,6 +2,7 @@ module.exports = {
 	extends: [
 		"airbnb-typescript/base",
 		"plugin:node/recommended",
+		"plugin:compat/recommended",
 		"plugin:promise/recommended",
 	],
 	plugins: [
