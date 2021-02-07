@@ -2,7 +2,6 @@ module.exports = {
 	extends: [
 		"airbnb-typescript/base",
 		"plugin:node/recommended",
-		"plugin:compat/recommended",
 		"plugin:promise/recommended",
 	],
 	plugins: [
@@ -30,14 +29,12 @@ module.exports = {
 		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
 		"implicit-arrow-linebreak": "off",
-		"node/no-unpublished-import": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
 		"@typescript-eslint/comma-spacing": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
-		"@typescript-eslint/no-floating-promises": "off",
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"no-mixed-spaces-and-tabs": [
