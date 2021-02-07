@@ -23,6 +23,7 @@ module.exports = {
 		"no-nested-ternary": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
+		"node/no-process-env": "error",
 		"no-restricted-globals": "off",
 		"array-bracket-spacing": "off",
 		"node/no-missing-import": "off",
