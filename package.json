@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "3.6.1",
+	"version": "3.6.2",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -21,6 +21,7 @@
 		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push"
 	},
 	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.14.2",
 		"eslint-config-airbnb-typescript": "^12.0.0",
 		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0"
