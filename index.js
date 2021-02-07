@@ -21,7 +21,6 @@ module.exports = {
 		"no-else-return": "off",
 		"no-await-in-loop": "off",
 		"no-nested-ternary": "off",
-		"node/no-process-env": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
 		"no-restricted-globals": "off",
