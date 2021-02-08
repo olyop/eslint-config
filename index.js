@@ -29,6 +29,7 @@ module.exports = {
 		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
 		"implicit-arrow-linebreak": "off",
+		"node/no-unpublished-import": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
 		"@typescript-eslint/comma-spacing": "off",
