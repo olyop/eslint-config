@@ -16,6 +16,7 @@ module.exports = {
 		"radix": "off",
 		"no-tabs": "off",
 		"no-console": "off",
+		"quote-props": "off",
 		"arrow-parens": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
