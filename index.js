@@ -18,6 +18,7 @@ module.exports = {
 		"no-console": "off",
 		"quote-props": "off",
 		"arrow-parens": "off",
+		"no-lonely-if": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
 		"no-await-in-loop": "off",
