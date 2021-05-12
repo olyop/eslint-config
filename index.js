@@ -79,9 +79,7 @@ module.exports = {
 		],
 		"@typescript-eslint/no-unused-vars": [
 			"error",
-			{
-				args: "none",
-			},
+			{ args: "none" },
 		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
