@@ -18,7 +18,7 @@
 	"scripts": {
 		"postpublish": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
-		"push": "clear && git status && git add -A && git commit -m \"Update\" && git push"
+		"push": "git commit -am \"Update\" && git push"
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.22.1",
