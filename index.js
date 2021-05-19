@@ -87,7 +87,13 @@ module.exports = {
 		],
 		"import/order": [
 			"error",
-			{ "newlines-between": "always-and-inside-groups" },
+			{
+				"groups": [
+					["builtin", "external", "internal", "type"],
+					["parent", "sibling", "index"]
+				],
+				"newlines-between": "always-and-inside-groups"
+			},
 		],
 		"@typescript-eslint/naming-convention": [
 			"error",
