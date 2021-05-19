@@ -85,6 +85,10 @@ module.exports = {
 			"error",
 			"only-multiline",
 		],
+		"import/order": [
+			"error",
+			{ "newlines-between": "always" },
+		],
 		"@typescript-eslint/naming-convention": [
 			"error",
 			{
