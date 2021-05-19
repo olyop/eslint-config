@@ -87,7 +87,7 @@ module.exports = {
 		],
 		"import/order": [
 			"error",
-			{ "newlines-between": "always" },
+			{ "newlines-between": "always-and-inside-groups" },
 		],
 		"@typescript-eslint/naming-convention": [
 			"error",
