@@ -103,7 +103,7 @@ module.exports = {
 					regex: "(__typename|_)",
 				},
 				selector: "variableLike",
-				format: ["StrictPascalCase", "strictCamelCase", "UPPER_CASE"],
+				format: ["PascalCase", "CamelCase", "UPPER_CASE"],
 			},
 		],
 		"@typescript-eslint/member-delimiter-style": [
