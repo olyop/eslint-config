@@ -132,6 +132,7 @@ module.exports = {
 			{
 				SwitchCase: 1,
 				MemberExpression: "off",
+				ignoredNodes: ["TSTypeParameterInstantiation"]
 			},
 		],
 		"no-multiple-empty-lines": [
