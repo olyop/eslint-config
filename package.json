@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "3.7.19",
+	"version": "3.7.20",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -27,7 +27,9 @@
 		"eslint-plugin-node": "11.x"
 	},
 	"devDependencies": {
-		"eslint": "7.32.0",
+		"eslint": "7.32.0"
+	},
+	"dependencies": {
 		"eslint-config-airbnb-typescript": "14.0.0"
 	}
 }
