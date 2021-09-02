@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "3.7.17",
+	"version": "3.7.18",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -24,6 +24,8 @@
 		"eslint": "7.x",
 		"eslint-config-airbnb-typescript": "14.x",
 		"eslint-plugin-import": "2.x",
-		"eslint-plugin-node": "11.x"
+		"eslint-plugin-node": "11.x",
+		"@typescript-eslint/parser": "4.x",
+		"@typescript-eslint/eslint-plugin": "4.x"
 	}
 }
