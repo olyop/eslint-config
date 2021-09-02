@@ -21,6 +21,7 @@
 		"push": "git commit -am \"Update\" && git push"
 	},
 	"peerDependencies": {
+		"eslint": "7.x",
 		"eslint-config-airbnb-typescript": "14.x",
 		"eslint-plugin-import": "2.x",
 		"eslint-plugin-node": "11.x"
