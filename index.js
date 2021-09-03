@@ -110,13 +110,21 @@ module.exports = {
 			"error",
 			"double",
 		],
-		"@typescript-eslint/no-unused-vars": [
-			"error",
-			{ args: "none" },
-		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
 			"only-multiline",
+		],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				args: "none"
+			},
+		],
+		"react/jsx-tag-spacing": [
+			"error",
+			{
+				"beforeSelfClosing": "never"
+			}
 		],
 		"import/order": [
 			"error",
