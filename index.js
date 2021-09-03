@@ -17,6 +17,11 @@ module.exports = {
 			jsx: true,
 		},
 	},
+	settings: {
+		react: {
+			pragma: "createElement",
+		},
+	},
 	rules: {
 		"radix": "off",
 		"no-tabs": "off",
