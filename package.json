@@ -23,7 +23,7 @@
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": "5.x",
 		"@typescript-eslint/parser": "5.x",
-		"eslint": "7.x",
+		"eslint": "7.x || 8.x",
 		"eslint-config-airbnb": "18.x",
 		"eslint-config-airbnb-typescript": "14.x",
 		"eslint-plugin-import": "2.x",
