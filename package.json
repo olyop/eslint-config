@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "5.0.2",
+	"version": "5.0.3",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -21,16 +21,16 @@
 		"push": "git commit -am \"Update\" && git push"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "5.x",
-		"@typescript-eslint/parser": "5.x",
+		"@typescript-eslint/eslint-plugin": "5",
+		"@typescript-eslint/parser": "5",
 		"eslint": "7 - 8",
-		"eslint-config-airbnb": "18.x",
-		"eslint-config-airbnb-typescript": "14.x",
-		"eslint-plugin-import": "2.x",
-		"eslint-plugin-jsx-a11y": "6.x",
-		"eslint-plugin-node": "11.x",
-		"eslint-plugin-react": "7.x",
-		"eslint-plugin-react-hooks": "4.x"
+		"eslint-config-airbnb": "18",
+		"eslint-config-airbnb-typescript": "14",
+		"eslint-plugin-import": "2",
+		"eslint-plugin-jsx-a11y": "6",
+		"eslint-plugin-node": "11",
+		"eslint-plugin-react": "7",
+		"eslint-plugin-react-hooks": "4"
 	},
 	"devDependencies": {
 		"eslint": "7.32.0"
