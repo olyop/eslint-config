@@ -25,6 +25,7 @@ module.exports = {
 	rules: {
 		"radix": "off",
 		"no-tabs": "off",
+		"one-var": "off",
 		"no-console": "off",
 		"quote-props": "off",
 		"arrow-parens": "off",
