@@ -18,7 +18,7 @@
 	"scripts": {
 		"postpublish": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
-		"push": "git commit -am \"Update\" && git push"
+		"push": "git add -A && git commit -m \"Update\" && git push"
 	},
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": "5",
@@ -27,10 +27,7 @@
 		"eslint-config-airbnb": "19",
 		"eslint-config-airbnb-typescript": "15",
 		"eslint-plugin-import": "2",
-		"eslint-plugin-jsx-a11y": "6",
-		"eslint-plugin-node": "11",
-		"eslint-plugin-react": "7",
-		"eslint-plugin-react-hooks": "4"
+		"eslint-plugin-node": "11"
 	},
 	"devDependencies": {
 		"eslint": "8.2.0"
