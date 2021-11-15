@@ -84,7 +84,7 @@ module.exports = {
 			"error",
 			"only-multiline",
 		],
-		"@typescript-eslint/no-floating-promises": [
+		"@typescript-eslint/no-misused-promises": [
 			"error",
 			{
 				"checksVoidReturn": true
