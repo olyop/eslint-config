@@ -84,6 +84,12 @@ module.exports = {
 			"error",
 			"only-multiline",
 		],
+		"@typescript-eslint/no-floating-promises": [
+			"error",
+			{
+				"ignoreVoid": true
+			}
+		],
 		"@typescript-eslint/no-misused-promises": [
 			"error",
 			{
@@ -93,7 +99,7 @@ module.exports = {
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
-				args: "none"
+				"args": "none"
 			},
 		],
 		"import/order": [
@@ -109,57 +115,61 @@ module.exports = {
 		"@typescript-eslint/naming-convention": [
 			"error",
 			{
-				filter: {
-					match: false,
-					regex: "(__typename|_)",
+				"filter": {
+					"match": false,
+					"regex": "(__typename|_)",
 				},
-				selector: "variableLike",
-				format: ["PascalCase", "camelCase", "UPPER_CASE"],
+				"selector": "variableLike",
+				"format": ["PascalCase", "camelCase", "UPPER_CASE"],
 			},
 		],
 		"@typescript-eslint/member-delimiter-style": [
 			"error",
 			{
-				multiline: {
-					requireLast: true,
-					delimiter: "comma",
+				"multiline": {
+					"requireLast": true,
+					"delimiter": "comma",
 				},
-				singleline: {
-					delimiter: "comma",
-					requireLast: false,
+				"singleline": {
+					"delimiter": "comma",
+					"requireLast": false,
 				},
 			},
 		],
 		"no-underscore-dangle": [
 			"error",
-			{ allow: ["__typename", "__resolveType"] },
+			{
+				"allow": ["__typename", "__resolveType"]
+			},
 		],
 		"max-len": [
 			"error",
-			{ code: 120 },
+			{
+				"code": 120,
+			},
 		],
 		"@typescript-eslint/indent": [
 			"error",
 			"tab",
 			{
-				SwitchCase: 1,
-				MemberExpression: "off",
-				ignoredNodes: ["TSTypeParameterInstantiation"]
+				"SwitchCase": 1,
+				"MemberExpression": "off",
+				"ignoredNodes": ["TSTypeParameterInstantiation"]
 			},
 		],
 		"no-multiple-empty-lines": [
 			"error",
 			{
-				max: 1,
-				maxEOF: 1,
-				maxBOF: 0,
+				"max": 1,
+				"maxEOF": 1,
+				"maxBOF": 0,
 			},
 		],
 		"import/no-extraneous-dependencies": [
 			"error",
 			{
-				devDependencies: true,
-				optionalDependencies: false,
+				"devDependencies": true,
+				"optionalDependencies": false,
 			},
 		]
 	}
