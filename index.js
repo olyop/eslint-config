@@ -80,6 +80,12 @@ module.exports = {
 			"error",
 			"double",
 		],
+		"no-void": [
+			"error",
+			{
+				"allowAsStatement": true
+			}
+		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
 			"only-multiline",
