@@ -23,6 +23,7 @@ module.exports = {
 		"quote-props": "off",
 		"arrow-parens": "off",
 		"no-lonely-if": "off",
+		"default-case": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
 		"no-await-in-loop": "off",
