@@ -24,6 +24,7 @@ module.exports = {
 		"no-lonely-if": "off",
 		"comma-dangle": "off",
 		"default-case": "off",
+		"comma-spacing": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
 		"no-await-in-loop": "off",
@@ -39,7 +40,6 @@ module.exports = {
 		"node/no-unpublished-import": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
-		"@typescript-eslint/comma-spacing": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
@@ -80,6 +80,9 @@ module.exports = {
 		"@typescript-eslint/quotes": [
 			"error",
 			"double",
+		],
+		"@typescript-eslint/comma-spacing": [
+			"error"
 		],
 		"no-void": [
 			"error",
