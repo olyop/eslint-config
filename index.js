@@ -89,9 +89,7 @@ module.exports = {
 		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
-			{
-				"generics": "never"
-			}
+			"always-multiline"
 		],
 		"@typescript-eslint/no-floating-promises": [
 			"error",
