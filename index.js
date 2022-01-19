@@ -22,6 +22,7 @@ module.exports = {
 		"no-console": "off",
 		"arrow-parens": "off",
 		"no-lonely-if": "off",
+		"comma-dangle": "off",
 		"default-case": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
@@ -76,10 +77,6 @@ module.exports = {
 			"error",
 			"never",
 		],
-		"comma-dangle": [
-			"error",
-			"always-multiline",
-		],
 		"@typescript-eslint/quotes": [
 			"error",
 			"double",
@@ -92,7 +89,10 @@ module.exports = {
 		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
-			"only-multiline",
+			"always-multiline",
+			{
+				"generics": false
+			}
 		],
 		"@typescript-eslint/no-floating-promises": [
 			"error",
