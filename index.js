@@ -12,7 +12,7 @@ module.exports = {
 		"promise",
 	],
 	parserOptions: {
-		ecmaVersion: 2021,
+		ecmaVersion: 2022,
 		sourceType: "module",
 	},
 	rules: {
@@ -20,7 +20,6 @@ module.exports = {
 		"no-tabs": "off",
 		"one-var": "off",
 		"no-console": "off",
-		"quote-props": "off",
 		"arrow-parens": "off",
 		"no-lonely-if": "off",
 		"default-case": "off",
@@ -45,6 +44,10 @@ module.exports = {
 		"node/no-unsupported-features/es-syntax": "off",
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"quote-props": [
+			"error",
+			"consistent-as-needed"
+		],
 		"no-mixed-spaces-and-tabs": [
 			"error",
 			"smart-tabs",
