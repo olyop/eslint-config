@@ -47,7 +47,7 @@ module.exports = {
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"quote-props": [
 			"error",
-			"consistent-as-needed"
+			"consistent-as-needed",
 		],
 		"no-mixed-spaces-and-tabs": [
 			"error",
@@ -82,34 +82,43 @@ module.exports = {
 			"double",
 		],
 		"@typescript-eslint/comma-spacing": [
-			"error"
+			"error",
 		],
 		"no-void": [
 			"error",
 			{
-				"allowAsStatement": true
-			}
-		],
-		"@typescript-eslint/comma-dangle": [
-			"error",
-			"always-multiline"
+				"allowAsStatement": true,
+			},
 		],
 		"@typescript-eslint/no-floating-promises": [
 			"error",
 			{
-				"ignoreVoid": true
-			}
+				"ignoreVoid": true,
+			},
 		],
 		"@typescript-eslint/no-misused-promises": [
 			"error",
 			{
-				"checksVoidReturn": true
-			}
+				"checksVoidReturn": true,
+			},
 		],
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
-				"args": "none"
+				"args": "none",
+			},
+		],
+		"@typescript-eslint/comma-dangle": [
+			"error",
+			{
+				"enums": "always-multiline",
+				"tuples": "always-multiline",
+				"arrays": "always-multiline",
+				"objects": "always-multiline",
+				"imports": "always-multiline",
+				"exports": "always-multiline",
+				"generics": "always-multiline",
+				"functions": "always-multiline",
 			},
 		],
 		"import/order": [
@@ -117,9 +126,9 @@ module.exports = {
 			{
 				"groups": [
 					["builtin", "external", "internal", "type"],
-					["parent", "sibling", "index"]
+					["parent", "sibling", "index"],
 				],
-				"newlines-between": "always-and-inside-groups"
+				"newlines-between": "always-and-inside-groups",
 			},
 		],
 		"@typescript-eslint/naming-convention": [
@@ -149,7 +158,7 @@ module.exports = {
 		"no-underscore-dangle": [
 			"error",
 			{
-				"allow": ["__typename", "__resolveType"]
+				"allow": ["__typename", "__resolveType"],
 			},
 		],
 		"max-len": [
@@ -164,7 +173,7 @@ module.exports = {
 			{
 				"SwitchCase": 1,
 				"MemberExpression": "off",
-				"ignoredNodes": ["TSTypeParameterInstantiation"]
+				"ignoredNodes": ["TSTypeParameterInstantiation"],
 			},
 		],
 		"no-multiple-empty-lines": [
@@ -181,6 +190,6 @@ module.exports = {
 				"devDependencies": true,
 				"optionalDependencies": false,
 			},
-		]
+		],
 	}
 }
