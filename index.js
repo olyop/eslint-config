@@ -111,14 +111,14 @@ module.exports = {
 		"@typescript-eslint/comma-dangle": [
 			"error",
 			{
-				"enums": "always-multiline",
-				"tuples": "always-multiline",
-				"arrays": "always-multiline",
-				"objects": "always-multiline",
-				"imports": "always-multiline",
-				"exports": "always-multiline",
-				"generics": "always-multiline",
-				"functions": "always-multiline",
+				"enums": "only-multiline",
+				"tuples": "only-multiline",
+				"arrays": "only-multiline",
+				"objects": "only-multiline",
+				"imports": "only-multiline",
+				"exports": "only-multiline",
+				"generics": "only-multiline",
+				"functions": "only-multiline",
 			},
 		],
 		"import/order": [
