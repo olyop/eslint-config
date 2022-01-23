@@ -81,6 +81,10 @@ module.exports = {
 			"error",
 			"double",
 		],
+		"@typescript-eslint/comma-dangle": [
+			"error",
+			"always-multiline",
+		],
 		"@typescript-eslint/comma-spacing": [
 			"error",
 		],
@@ -106,19 +110,6 @@ module.exports = {
 			"error",
 			{
 				"args": "none",
-			},
-		],
-		"@typescript-eslint/comma-dangle": [
-			"error",
-			{
-				"enums": "only-multiline",
-				"tuples": "only-multiline",
-				"arrays": "only-multiline",
-				"objects": "only-multiline",
-				"imports": "only-multiline",
-				"exports": "only-multiline",
-				"generics": "only-multiline",
-				"functions": "only-multiline",
 			},
 		],
 		"import/order": [
