@@ -91,12 +91,6 @@ module.exports = {
 		"@typescript-eslint/comma-spacing": [
 			"error",
 		],
-		"array-bracket-spacing": [
-			"error",
-			{
-				"objectsInArrays": false
-			}
-		],
 		"no-void": [
 			"error",
 			{
