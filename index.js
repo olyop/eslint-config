@@ -118,6 +118,8 @@ module.exports = {
 			"always",
 			{
 				"singleValue": false,
+				"arraysInArrays": false,
+				"objectsInArrays": false,
 			}
 		],
 		"import/order": [
