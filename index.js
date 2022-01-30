@@ -115,6 +115,13 @@ module.exports = {
 				"args": "none",
 			},
 		],
+		"array-bracket-spacing": [
+			"error",
+			"always",
+			{
+				"objectsInArrays": false,
+			},
+		],
 		"import/order": [
 			"error",
 			{
