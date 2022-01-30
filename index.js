@@ -7,6 +7,9 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
+	env: {
+		"es2022": true
+	},
 	plugins: [
 		"node",
 		"promise",
@@ -14,7 +17,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 2022,
 		sourceType: "module",
-	},
+	},	
 	rules: {
 		"radix": "off",
 		"no-tabs": "off",
