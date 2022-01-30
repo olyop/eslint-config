@@ -37,7 +37,6 @@ module.exports = {
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
 		"no-restricted-globals": "off",
-		"array-bracket-spacing": "off",
 		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
 		"implicit-arrow-linebreak": "off",
@@ -91,6 +90,12 @@ module.exports = {
 		],
 		"@typescript-eslint/comma-spacing": [
 			"error",
+		],
+		"array-bracket-spacing": [
+			"error",
+			{
+				"objectsInArrays": false
+			}
 		],
 		"no-void": [
 			"error",
