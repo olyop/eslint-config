@@ -8,7 +8,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
 	env: {
-		"es2021": true
+		"es2021": true,
+		"shared-node-browser": true,
 	},
 	plugins: [
 		"node",
