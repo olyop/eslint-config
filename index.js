@@ -32,6 +32,7 @@ module.exports = {
 		"node/no-process-env": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
+		"array-bracket-spacing": "off",
 		"no-restricted-globals": "off",
 		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
@@ -108,15 +109,6 @@ module.exports = {
 			{
 				"args": "none",
 			},
-		],
-		"array-bracket-spacing": [
-			"error",
-			"always",
-			{
-				"singleValue": false,
-				"arraysInArrays": false,
-				"objectsInArrays": false,
-			}
 		],
 		"import/order": [
 			"error",
