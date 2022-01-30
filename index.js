@@ -8,14 +8,14 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
 	env: {
-		"es2022": true
+		"es2021": true
 	},
 	plugins: [
 		"node",
 		"promise",
 	],
 	parserOptions: {
-		ecmaVersion: 2022,
+		ecmaVersion: 2021,
 		sourceType: "module",
 	},	
 	rules: {

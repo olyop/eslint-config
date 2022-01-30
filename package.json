@@ -21,8 +21,6 @@
 		"push": "git add -A && git commit -m \"Update\" && git push"
 	},
 	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "5",
-		"@typescript-eslint/parser": "5",
 		"eslint": "8",
 		"eslint-config-airbnb": "19",
 		"eslint-config-airbnb-typescript": "16",
@@ -30,6 +28,6 @@
 		"eslint-plugin-node": "11"
 	},
 	"devDependencies": {
-		"eslint": "8.7.0"
+		"eslint": "8.8.0"
 	}
 }
