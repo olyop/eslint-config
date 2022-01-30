@@ -89,9 +89,6 @@ module.exports = {
 			"error",
 			"only-multiline",
 		],
-		"@typescript-eslint/comma-spacing": [
-			"error",
-		],
 		"no-void": [
 			"error",
 			{
