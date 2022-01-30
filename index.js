@@ -69,10 +69,6 @@ module.exports = {
 			"error",
 			"unix",
 		],
-		"array-bracket-spacing": [
-			"error",
-			"always"
-		],
 		"operator-linebreak": [
 			"error",
 			"after",
@@ -116,6 +112,13 @@ module.exports = {
 			{
 				"args": "none",
 			},
+		],
+		"array-bracket-spacing": [
+			"error",
+			"always",
+			{
+				"singleValue": false,
+			}
 		],
 		"import/order": [
 			"error",
