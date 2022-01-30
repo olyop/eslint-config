@@ -43,6 +43,7 @@ module.exports = {
 		"node/no-unpublished-import": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
+		"@typescript-eslint/comma-spacing": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
