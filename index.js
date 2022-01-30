@@ -7,16 +7,12 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
-	env: {
-		"es2021": true,
-		"shared-node-browser": true,
-	},
 	plugins: [
 		"node",
 		"promise",
 	],
 	parserOptions: {
-		ecmaVersion: 2021,
+		ecmaVersion: 2022,
 		sourceType: "module",
 	},	
 	rules: {
