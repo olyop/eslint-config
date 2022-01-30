@@ -69,6 +69,10 @@ module.exports = {
 			"error",
 			"unix",
 		],
+		"array-bracket-spacing": [
+			"error",
+			"always"
+		],
 		"operator-linebreak": [
 			"error",
 			"after",
