@@ -87,7 +87,7 @@ module.exports = {
 		],
 		"@typescript-eslint/comma-dangle": [
 			"error",
-			"always-multiline",
+			"only-multiline",
 		],
 		"@typescript-eslint/comma-spacing": [
 			"error",
