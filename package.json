@@ -2,7 +2,7 @@
 	"license": "MIT",
 	"private": false,
 	"main": "index.js",
-	"version": "5.1.30",
+	"version": "5.1.31",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",

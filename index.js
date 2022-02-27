@@ -54,10 +54,6 @@ module.exports = {
 			"error",
 			"smart-tabs",
 		],
-		"import/extensions": [
-			"error",
-			"never",
-		],
 		"eol-last": [
 			"error",
 			"never",
@@ -85,6 +81,12 @@ module.exports = {
 		"@typescript-eslint/comma-dangle": [
 			"error",
 			"only-multiline",
+		],
+		"import/extensions": [
+			"error",
+			{
+				"json": "always"
+			}
 		],
 		"no-void": [
 			"error",
