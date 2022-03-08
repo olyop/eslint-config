@@ -81,6 +81,17 @@ module.exports = {
 			"error",
 			"only-multiline",
 		],
+		"node/no-missing-import": [
+			"error",
+			{
+				"tryExtensions": [
+					".js",
+					".ts",
+					".jsx",
+					".tsx"
+				]
+			}
+		],
 		"import/extensions": [
 			"error",
 			{
