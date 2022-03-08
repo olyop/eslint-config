@@ -34,7 +34,6 @@ module.exports = {
 		"no-restricted-syntax": "off",
 		"array-bracket-spacing": "off",
 		"no-restricted-globals": "off",
-		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
 		"implicit-arrow-linebreak": "off",
 		"node/no-unpublished-import": "off",
@@ -109,7 +108,7 @@ module.exports = {
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
-				"args": "none",
+				"args": "after-used",
 			},
 		],
 		"import/order": [
