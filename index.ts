@@ -90,7 +90,8 @@ const configuration: TSESLint.Linter.Config = {
 					".js",
 					".ts",
 					".jsx",
-					".tsx"
+					".tsx",
+					".d.ts"
 				]
 			}
 		],

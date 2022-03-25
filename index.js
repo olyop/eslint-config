@@ -90,7 +90,8 @@ var configuration = {
                     ".js",
                     ".ts",
                     ".jsx",
-                    ".tsx"
+                    ".tsx",
+                    ".d.ts"
                 ]
             }
         ],
