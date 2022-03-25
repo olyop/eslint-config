@@ -3,11 +3,14 @@
 	"private": false,
 	"type": "module",
 	"main": "index.js",
-	"version": "5.1.34",
+	"version": "5.1.35",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
 	"homepage": "https://github.com/olyop/eslint-config/blob/master/README.md",
+	"files": [
+		"index.js"
+	],
 	"author": {
 		"name": "Oliver Plummer",
 		"email": "oliver.plummer@outlook.com"
