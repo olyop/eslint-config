@@ -1,8 +1,9 @@
 {
 	"license": "MIT",
 	"private": false,
+	"type": "module",
 	"main": "index.js",
-	"version": "5.1.33",
+	"version": "5.1.34",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -16,7 +17,10 @@
 		"url": "https://github.com/olyop/eslint-config.git"
 	},
 	"scripts": {
+		"build": "tsc",
 		"postpublish": "npm run push",
+		"delete-build": "del-cli index.js",
+		"prepublishOnly": "npm run delete-build && npm run build",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "git add -A && git commit -m \"Update\" && git push"
 	},
@@ -31,6 +35,10 @@
 		"eslint-plugin-promise": "6"
 	},
 	"devDependencies": {
-		"eslint": "8.10.0"
+		"@oly_op/tsconfig": "1.0.12",
+		"@typescript-eslint/utils": "5.16.0",
+		"del-cli": "4.0.1",
+		"eslint": "8.10.0",
+		"typescript": "4.6.3"
 	}
 }
