@@ -197,4 +197,4 @@ const configuration: TSESLint.Linter.Config = {
 	}
 }
 
-export default configuration
+module.exports = configuration
