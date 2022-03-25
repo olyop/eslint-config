@@ -1,7 +1,9 @@
 {
 	"extends": "@oly_op/tsconfig/tsconfig.json",
 	"compilerOptions": {
-		"module": "CommonJS",
-		"resolveJsonModule": false,
+		"target": "ES5",
+		"module": "UMD",
+		"skipLibCheck": true,
+		"resolveJsonModule": false
 	}
 }

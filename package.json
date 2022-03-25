@@ -1,9 +1,9 @@
 {
 	"license": "MIT",
 	"private": false,
-	"type": "module",
+	"type": "commonjs",
 	"main": "index.js",
-	"version": "5.1.35",
+	"version": "5.1.36",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -42,6 +42,6 @@
 		"@typescript-eslint/utils": "5.16.0",
 		"del-cli": "4.0.1",
 		"eslint": "8.10.0",
-		"typescript": "4.6.3"
+		"typescript": "4.7.0-dev.20220323"
 	}
 }
