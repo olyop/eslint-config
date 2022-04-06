@@ -3,14 +3,11 @@
 	"private": false,
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "5.1.39",
+	"version": "5.1.40",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
 	"homepage": "https://github.com/olyop/eslint-config/blob/master/README.md",
-	"files": [
-		"index.js"
-	],
 	"author": {
 		"name": "Oliver Plummer",
 		"email": "oliver.plummer@outlook.com"
@@ -19,6 +16,9 @@
 		"type": "git",
 		"url": "https://github.com/olyop/eslint-config.git"
 	},
+	"files": [
+		"index.js"
+	],
 	"scripts": {
 		"build": "tsc",
 		"postpublish": "npm run push",
