@@ -1,4 +1,4 @@
-import type { TSESLint } from "@typescript-eslint/utils"
+import { TSESLint } from "@typescript-eslint/utils"
 
 const configuration: TSESLint.Linter.Config = {
 	extends: [
@@ -123,6 +123,7 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"args": "after-used",
+				"ignoreRestSiblings": true
 			},
 		],
 		"import/order": [

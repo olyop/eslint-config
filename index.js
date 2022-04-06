@@ -123,6 +123,7 @@ var configuration = {
             "error",
             {
                 "args": "after-used",
+                "ignoreRestSiblings": true
             },
         ],
         "import/order": [
