@@ -85,7 +85,10 @@ var configuration = {
         ],
         "@typescript-eslint/no-invalid-void-type": [
             "error",
-            "always"
+            {
+                "allowAsThisParameter": false,
+                "allowInGenericTypeArguments": false
+            }
         ],
         "node/no-missing-import": [
             "error",

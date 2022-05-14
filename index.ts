@@ -85,7 +85,10 @@ const configuration: TSESLint.Linter.Config = {
 		],
 		"@typescript-eslint/no-invalid-void-type": [
 			"error",
-			"always"
+			{
+				"allowAsThisParameter": false,
+				"allowInGenericTypeArguments": false
+			}
 		],
 		"node/no-missing-import": [
 			"error",
