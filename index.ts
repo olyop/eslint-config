@@ -18,6 +18,7 @@ const configuration: TSESLint.Linter.Config = {
 		sourceType: "module",
 	},	
 	rules: {
+		"semi": "off",
 		"radix": "off",
 		"no-tabs": "off",
 		"one-var": "off",
@@ -45,7 +46,6 @@ const configuration: TSESLint.Linter.Config = {
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
-		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"quote-props": [
 			"error",
@@ -82,6 +82,10 @@ const configuration: TSESLint.Linter.Config = {
 		"@typescript-eslint/comma-dangle": [
 			"error",
 			"always-multiline",
+		],
+		"@typescript-eslint/no-invalid-void-type": [
+			"error",
+			"always"
 		],
 		"node/no-missing-import": [
 			"error",
