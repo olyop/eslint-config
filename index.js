@@ -24,7 +24,6 @@ var configuration = {
         "no-tabs": "off",
         "one-var": "off",
         "no-console": "off",
-        "arrow-parens": "off",
         "no-lonely-if": "off",
         "comma-dangle": "off",
         "default-case": "off",
@@ -84,6 +83,10 @@ var configuration = {
         "@typescript-eslint/comma-dangle": [
             "error",
             "always-multiline",
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed",
         ],
         "@typescript-eslint/no-invalid-void-type": [
             "error",
