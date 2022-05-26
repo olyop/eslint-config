@@ -1,4 +1,4 @@
-import { TSESLint } from "@typescript-eslint/utils"
+import type { TSESLint } from "@typescript-eslint/utils"
 
 const configuration: TSESLint.Linter.Config = {
 	extends: [
@@ -7,16 +7,17 @@ const configuration: TSESLint.Linter.Config = {
 		"plugin:node/recommended",
 		"plugin:promise/recommended",
 		"plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
 	],
 	plugins: [
 		"node",
 		"promise",
+		"eslint-plugin-prefer-arrow-functions",
 	],
 	parserOptions: {
 		ecmaVersion: 2022,
 		sourceType: "module",
-	},	
+	},
 	rules: {
 		"semi": "off",
 		"radix": "off",
@@ -47,6 +48,7 @@ const configuration: TSESLint.Linter.Config = {
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"prefer-arrow-functions/prefer-arrow-functions": "error",
 		"quote-props": [
 			"error",
 			"consistent-as-needed",
@@ -87,8 +89,8 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"allowAsThisParameter": false,
-				"allowInGenericTypeArguments": false
-			}
+				"allowInGenericTypeArguments": false,
+			},
 		],
 		"node/no-missing-import": [
 			"error",
@@ -98,15 +100,15 @@ const configuration: TSESLint.Linter.Config = {
 					".ts",
 					".jsx",
 					".tsx",
-					".d.ts"
-				]
-			}
+					".d.ts",
+				],
+			},
 		],
 		"import/extensions": [
 			"error",
 			{
-				"json": "always"
-			}
+				"json": "always",
+			},
 		],
 		"no-void": [
 			"error",
@@ -130,7 +132,7 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"args": "after-used",
-				"ignoreRestSiblings": true
+				"ignoreRestSiblings": true,
 			},
 		],
 		"import/order": [
@@ -203,7 +205,7 @@ const configuration: TSESLint.Linter.Config = {
 				"optionalDependencies": false,
 			},
 		],
-	}
+	},
 }
 
 module.exports = configuration

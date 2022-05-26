@@ -12,6 +12,7 @@ var configuration = {
     plugins: [
         "node",
         "promise",
+        "eslint-plugin-prefer-arrow-functions",
     ],
     parserOptions: {
         ecmaVersion: 2022,
@@ -47,6 +48,7 @@ var configuration = {
         "@typescript-eslint/prefer-regexp-exec": "off",
         "node/no-unsupported-features/es-syntax": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
+        "prefer-arrow-functions/prefer-arrow-functions": "error",
         "quote-props": [
             "error",
             "consistent-as-needed",
@@ -87,8 +89,8 @@ var configuration = {
             "error",
             {
                 "allowAsThisParameter": false,
-                "allowInGenericTypeArguments": false
-            }
+                "allowInGenericTypeArguments": false,
+            },
         ],
         "node/no-missing-import": [
             "error",
@@ -98,15 +100,15 @@ var configuration = {
                     ".ts",
                     ".jsx",
                     ".tsx",
-                    ".d.ts"
-                ]
-            }
+                    ".d.ts",
+                ],
+            },
         ],
         "import/extensions": [
             "error",
             {
-                "json": "always"
-            }
+                "json": "always",
+            },
         ],
         "no-void": [
             "error",
@@ -130,7 +132,7 @@ var configuration = {
             "error",
             {
                 "args": "after-used",
-                "ignoreRestSiblings": true
+                "ignoreRestSiblings": true,
             },
         ],
         "import/order": [
@@ -203,6 +205,6 @@ var configuration = {
                 "optionalDependencies": false,
             },
         ],
-    }
+    },
 };
 module.exports = configuration;
