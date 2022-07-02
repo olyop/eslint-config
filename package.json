@@ -3,7 +3,7 @@
 	"private": false,
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "5.2.0",
+	"version": "5.2.1",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -21,7 +21,7 @@
 	],
 	"scripts": {
 		"build": "tsc",
-		"postpublish": "npm run push",
+		"postpublish": "npm i -D @oly_op/eslint-config@latest && npm run push",
 		"delete-build": "del-cli index.js",
 		"prepublishOnly": "npm run delete-build && npm run build",
 		"sync": "git checkout . && git remote update && git pull",
@@ -34,13 +34,13 @@
 		"eslint-config-airbnb-base": "15",
 		"eslint-config-airbnb-typescript": "17",
 		"eslint-plugin-import": "2",
-		"eslint-plugin-node": "11",
 		"eslint-plugin-json": "3",
+		"eslint-plugin-node": "11",
 		"eslint-plugin-prefer-arrow-functions": "3",
 		"eslint-plugin-promise": "6"
 	},
 	"devDependencies": {
-		"@oly_op/eslint-config": "5.1.44",
+		"@oly_op/eslint-config": "5.2.1",
 		"@oly_op/tsconfig": "1.0.13",
 		"@types/node": "18.0.0",
 		"@typescript-eslint/eslint-plugin": "5.30.3",
