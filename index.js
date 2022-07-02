@@ -93,7 +93,7 @@ var configuration = {
             "error",
             {
                 "allowAsThisParameter": false,
-                "allowInGenericTypeArguments": false,
+                "allowInGenericTypeArguments": true,
             },
         ],
         "node/no-missing-import": [

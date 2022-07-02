@@ -93,7 +93,7 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"allowAsThisParameter": false,
-				"allowInGenericTypeArguments": false,
+				"allowInGenericTypeArguments": true,
 			},
 		],
 		"node/no-missing-import": [
