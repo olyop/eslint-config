@@ -5,6 +5,7 @@ var configuration = {
         "airbnb-base",
         "airbnb-typescript/base",
         "plugin:node/recommended",
+        "plugin:json/recommended",
         "plugin:promise/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
