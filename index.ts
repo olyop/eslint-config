@@ -6,14 +6,18 @@ const configuration: TSESLint.Linter.Config = {
 		"airbnb-typescript/base",
 		"plugin:node/recommended",
 		"plugin:json/recommended",
+		"plugin:import/recommended",
 		"plugin:promise/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
 	],
 	plugins: [
 		"node",
+		"json",
+		"import",
 		"promise",
-		"eslint-plugin-prefer-arrow-functions",
+		"prefer-arrow",
+		"@typescript-eslint",
 	],
 	parserOptions: {
 		ecmaVersion: 2022,
@@ -94,6 +98,14 @@ const configuration: TSESLint.Linter.Config = {
 			{
 				"allowAsThisParameter": false,
 				"allowInGenericTypeArguments": true,
+			},
+		],
+		"prefer-arrow/prefer-arrow-functions": [
+			"warn",
+			{
+				"disallowPrototype": true,
+				"singleReturnOnly": false,
+				"classPropertiesAllowed": false,
 			},
 		],
 		"node/no-missing-import": [
