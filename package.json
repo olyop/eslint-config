@@ -3,7 +3,7 @@
 	"private": false,
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "5.3.0",
+	"version": "5.3.1",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -37,7 +37,7 @@
 		"eslint-plugin-promise": "latest"
 	},
 	"devDependencies": {
-		"@oly_op/eslint-config": "5.3.0",
+		"@oly_op/eslint-config": "5.3.1",
 		"@oly_op/tsconfig": "1.0.13",
 		"@types/node": "18.0.5",
 		"@typescript-eslint/eslint-plugin": "5.30.6",

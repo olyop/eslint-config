@@ -52,7 +52,6 @@ const configuration: TSESLint.Linter.Config = {
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
-		"prefer-arrow-functions/prefer-arrow-functions": "error",
 		"quote-props": [
 			"error",
 			"consistent-as-needed",
