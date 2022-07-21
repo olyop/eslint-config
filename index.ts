@@ -108,7 +108,7 @@ const configuration: TSESLint.Linter.Config = {
 			},
 		],
 		"node/no-missing-import": [
-			"error",
+			"off",
 			{
 				"tryExtensions": [
 					".js",

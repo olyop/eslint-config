@@ -108,7 +108,7 @@ var configuration = {
             },
         ],
         "node/no-missing-import": [
-            "error",
+            "off",
             {
                 "tryExtensions": [
                     ".js",
