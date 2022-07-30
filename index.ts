@@ -38,6 +38,7 @@ const configuration: TSESLint.Linter.Config = {
 		"no-await-in-loop": "off",
 		"no-nested-ternary": "off",
 		"node/no-process-env": "off",
+		"no-use-before-define": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
 		"array-bracket-spacing": "off",
@@ -131,6 +132,9 @@ const configuration: TSESLint.Linter.Config = {
 				"allowAsStatement": true,
 			},
 		],
+		"padded-blocks": ["error", {
+			"classes": "always",
+		}],
 		"@typescript-eslint/no-floating-promises": [
 			"error",
 			{
@@ -171,6 +175,17 @@ const configuration: TSESLint.Linter.Config = {
 				"format": ["PascalCase", "camelCase", "UPPER_CASE"],
 			},
 		],
+		"@typescript-eslint/no-use-before-define": [
+			"error",
+			{
+				"enums": true,
+				"types": true,
+				"classes": true,
+				"typedefs": true,
+				"variables": true,
+				"functions": true,
+			},
+		],
 		"@typescript-eslint/member-delimiter-style": [
 			"error",
 			{
@@ -194,6 +209,11 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"code": 120,
+				"tabWidth": 4,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreRegExpLiterals": true,
+				"ignoreTemplateLiterals": true,
 			},
 		],
 		"@typescript-eslint/indent": [
