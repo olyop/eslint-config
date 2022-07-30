@@ -52,6 +52,7 @@ var configuration = {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/prefer-regexp-exec": "off",
         "node/no-unsupported-features/es-syntax": "off",
+        "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "quote-props": [
             "error",
@@ -173,17 +174,6 @@ var configuration = {
                 },
                 "selector": "variableLike",
                 "format": ["PascalCase", "camelCase", "UPPER_CASE"],
-            },
-        ],
-        "@typescript-eslint/no-use-before-define": [
-            "error",
-            {
-                "enums": true,
-                "types": true,
-                "classes": true,
-                "typedefs": true,
-                "variables": true,
-                "functions": true,
             },
         ],
         "@typescript-eslint/member-delimiter-style": [
