@@ -3,7 +3,7 @@
 	"private": false,
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "5.3.4",
+	"version": "6.0.0",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
