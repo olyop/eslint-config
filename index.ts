@@ -78,8 +78,11 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"replacements": {
+					"param": {
+						"parameter": true,
+					},
 					"params": {
-						"paramters": true,
+						"parameters": true,
 					},
 					"ref": {
 						"reference": true,
