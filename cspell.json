@@ -1,25 +1,14 @@
 {
-	"language": "en",
-	"useGitignore": true,
-	"caseSensitive": false,
-	"allowCompoundWords": true,
+	"import": ["@oly_op/cspell-dict/cspell-ext.json"],
 	"ignorePaths": [
-		"build",
-		"node_modules",
-		"cspell-dict.txt"
-	],
-	"import": [
-		"@cspell/dict-npm/cspell-ext.json",
-		"@cspell/dict-node/cspell-ext.json",
-		"@cspell/dict-filetypes/cspell-ext.json",
-		"@cspell/dict-typescript/cspell-ext.json",
-		"@cspell/dict-software-terms/cspell-ext.json"
+		"index.js",
+		"custom-words.txt"
 	],
 	"dictionaries": [
-		"custom-words"
+		"@oly_op/eslint-config"
 	],
 	"dictionaryDefinitions": [{
-		"name": "custom-words",
-		"path": "./cspell-dict.txt"
+		"name": "@oly_op/eslint-config",
+		"path": "./custom-words.txt"
 	}]
 }

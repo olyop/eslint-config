@@ -1,4 +1,4 @@
-import type { TSESLint } from "@typescript-eslint/utils"
+import type { TSESLint } from "@typescript-eslint/utils";
 
 const configuration: TSESLint.Linter.Config = {
 	extends: [
@@ -10,18 +10,16 @@ const configuration: TSESLint.Linter.Config = {
 		"plugin:promise/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"unicorn",
+		"prettier",
 	],
-	plugins: [
-		"node",
-		"json",
-		"import",
-		"promise",
-		"prefer-arrow",
-		"@typescript-eslint",
-	],
+	plugins: ["node", "json", "import", "promise", "prefer-arrow", "@typescript-eslint"],
 	parserOptions: {
-		ecmaVersion: 2022,
 		sourceType: "module",
+		ecmaVersion: "latest",
+	},
+	env: {
+		es2022: true,
 	},
 	rules: {
 		"semi": "off",
@@ -43,8 +41,11 @@ const configuration: TSESLint.Linter.Config = {
 		"no-restricted-syntax": "off",
 		"array-bracket-spacing": "off",
 		"no-restricted-globals": "off",
+		"function-paren-newline": "off",
 		"promise/catch-or-return": "off",
+		"no-mixed-spaces-and-tabs": "off",
 		"implicit-arrow-linebreak": "off",
+		"@typescript-eslint/indent": "off",
 		"node/no-unpublished-import": "off",
 		"lines-between-class-members": "off",
 		"import/prefer-default-export": "off",
@@ -52,48 +53,16 @@ const configuration: TSESLint.Linter.Config = {
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
 		"node/no-unsupported-features/es-syntax": "off",
-		"@typescript-eslint/no-use-before-define": "error",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
-		"quote-props": [
-			"error",
-			"consistent-as-needed",
-		],
-		"no-mixed-spaces-and-tabs": [
-			"error",
-			"smart-tabs",
-		],
-		"eol-last": [
-			"error",
-			"never",
-		],
-		"linebreak-style": [
-			"error",
-			"unix",
-		],
-		"operator-linebreak": [
-			"error",
-			"after",
-		],
-		"object-curly-spacing": [
-			"error",
-			"always",
-		],
-		"@typescript-eslint/semi": [
-			"error",
-			"never",
-		],
-		"@typescript-eslint/quotes": [
-			"error",
-			"double",
-		],
-		"@typescript-eslint/comma-dangle": [
-			"error",
-			"always-multiline",
-		],
-		"arrow-parens": [
-			"error",
-			"as-needed",
-		],
+
+		"no-dupe-keys": "error",
+		"@typescript-eslint/no-use-before-define": "error",
+		"quote-props": ["error", "consistent-as-needed"],
+		"eol-last": ["error", "always"],
+		"@typescript-eslint/semi": ["error", "always"],
+		"@typescript-eslint/quotes": ["error", "double"],
+		"@typescript-eslint/comma-dangle": ["error", "always-multiline"],
+		"arrow-parens": ["error", "as-needed"],
 		"@typescript-eslint/no-invalid-void-type": [
 			"error",
 			{
@@ -112,13 +81,7 @@ const configuration: TSESLint.Linter.Config = {
 		"node/no-missing-import": [
 			"off",
 			{
-				"tryExtensions": [
-					".js",
-					".ts",
-					".jsx",
-					".tsx",
-					".d.ts",
-				],
+				"tryExtensions": [".js", ".ts", ".jsx", ".tsx", ".d.ts"],
 			},
 		],
 		"import/extensions": [
@@ -133,9 +96,12 @@ const configuration: TSESLint.Linter.Config = {
 				"allowAsStatement": true,
 			},
 		],
-		"padded-blocks": ["error", {
-			"classes": "always",
-		}],
+		"padded-blocks": [
+			"error",
+			{
+				"classes": "always",
+			},
+		],
 		"@typescript-eslint/no-floating-promises": [
 			"error",
 			{
@@ -181,10 +147,10 @@ const configuration: TSESLint.Linter.Config = {
 			{
 				"multiline": {
 					"requireLast": true,
-					"delimiter": "comma",
+					"delimiter": "semi",
 				},
 				"singleline": {
-					"delimiter": "comma",
+					"delimiter": "semi",
 					"requireLast": false,
 				},
 			},
@@ -199,28 +165,19 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"code": 120,
-				"tabWidth": 4,
+				"tabWidth": 2,
 				"ignoreUrls": true,
 				"ignoreStrings": true,
 				"ignoreRegExpLiterals": true,
 				"ignoreTemplateLiterals": true,
 			},
 		],
-		"@typescript-eslint/indent": [
-			"error",
-			"tab",
-			{
-				"SwitchCase": 1,
-				"MemberExpression": "off",
-				"ignoredNodes": ["TSTypeParameterInstantiation"],
-			},
-		],
 		"no-multiple-empty-lines": [
 			"error",
 			{
 				"max": 1,
-				"maxEOF": 1,
 				"maxBOF": 0,
+				"maxEOF": 1,
 			},
 		],
 		"import/no-extraneous-dependencies": [
@@ -231,6 +188,6 @@ const configuration: TSESLint.Linter.Config = {
 			},
 		],
 	},
-}
+};
 
-module.exports = configuration
+module.exports = configuration;
