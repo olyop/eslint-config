@@ -10,10 +10,10 @@ const configuration: TSESLint.Linter.Config = {
 		"plugin:promise/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
-		"unicorn",
+		"plugin:unicorn/recommended",
 		"prettier",
 	],
-	plugins: ["node", "json", "import", "promise", "prefer-arrow", "@typescript-eslint"],
+	plugins: ["node", "json", "import", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	parserOptions: {
 		sourceType: "module",
 		ecmaVersion: "latest",
