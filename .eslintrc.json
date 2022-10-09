@@ -6,6 +6,7 @@
 	"rules": {
 		"eol-last": "off",
 		"quote-props": "off",
+		"unicorn/prefer-module": "off",
 		"@typescript-eslint/semi": "off",
 		"import/no-import-module-exports": "off"
 	}
