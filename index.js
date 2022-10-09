@@ -81,6 +81,7 @@ var configuration = {
                 "replacements": {
                     "ref": false,
                     "prev": false,
+                    "prop": false,
                     "props": false,
                     "param": false,
                     "params": false,

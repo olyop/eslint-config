@@ -82,6 +82,7 @@ const configuration: TSESLint.Linter.Config = {
 				"replacements": {
 					"ref": false,
 					"prev": false,
+					"prop": false,
 					"props": false,
 					"param": false,
 					"params": false,
