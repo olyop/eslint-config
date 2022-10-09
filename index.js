@@ -34,6 +34,7 @@ var configuration = {
         "no-unused-vars": "off",
         "no-else-return": "off",
         "unicorn/no-null": "off",
+        "no-array-reduce": "off",
         "no-await-in-loop": "off",
         "no-nested-ternary": "off",
         "node/no-process-env": "off",
@@ -51,12 +52,15 @@ var configuration = {
         "@typescript-eslint/indent": "off",
         "unicorn/no-array-for-each": "off",
         "node/no-unpublished-import": "off",
+        "unicorn/prefer-export-from": "off",
+        "unicorn/switch-case-braces": "off",
         "lines-between-class-members": "off",
         "import/prefer-default-export": "off",
         "unicorn/prefer-query-selector": "off",
         "@typescript-eslint/comma-spacing": "off",
         "unicorn/no-abusive-eslint-disable": "off",
         "@typescript-eslint/ban-ts-comment": "off",
+        "unicorn/no-array-callback-reference": "off",
         "@typescript-eslint/prefer-regexp-exec": "off",
         "node/no-unsupported-features/es-syntax": "off",
         "unicorn/unicorn/consistent-function-scoping": "off",
@@ -72,12 +76,16 @@ var configuration = {
         "unicorn/prevent-abbreviations": [
             "error",
             {
-                "allowList": {
-                    "ref": true,
-                    "props": true,
-                    "params": true,
-                    "PropTypes": true,
-                    "searchParams": true,
+                "replacements": {
+                    "params": {
+                        "paramters": true,
+                    },
+                    "ref": {
+                        "reference": true,
+                    },
+                    "props": {
+                        "properties": true,
+                    },
                 },
             },
         ],
