@@ -47,6 +47,7 @@ var configuration = {
         "function-paren-newline": "off",
         "unicorn/prefer-ternary": "off",
         "promise/catch-or-return": "off",
+        "unicorn/no-array-reduce": "off",
         "no-mixed-spaces-and-tabs": "off",
         "implicit-arrow-linebreak": "off",
         "@typescript-eslint/indent": "off",
@@ -55,6 +56,7 @@ var configuration = {
         "unicorn/prefer-export-from": "off",
         "unicorn/switch-case-braces": "off",
         "lines-between-class-members": "off",
+        "unicorn/no-useless-undefined": "off",
         "import/prefer-default-export": "off",
         "unicorn/prefer-query-selector": "off",
         "@typescript-eslint/comma-spacing": "off",
@@ -77,18 +79,11 @@ var configuration = {
             "error",
             {
                 "replacements": {
-                    "param": {
-                        "parameter": true,
-                    },
-                    "params": {
-                        "parameters": true,
-                    },
-                    "ref": {
-                        "reference": true,
-                    },
-                    "props": {
-                        "properties": true,
-                    },
+                    "ref": false,
+                    "prev": false,
+                    "props": false,
+                    "param": false,
+                    "params": false,
                 },
             },
         ],
