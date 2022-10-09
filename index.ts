@@ -44,6 +44,7 @@ const configuration: TSESLint.Linter.Config = {
 		"unicorn/prefer-switch": "off",
 		"no-restricted-globals": "off",
 		"function-paren-newline": "off",
+		"unicorn/prefer-ternary": "off",
 		"promise/catch-or-return": "off",
 		"no-mixed-spaces-and-tabs": "off",
 		"implicit-arrow-linebreak": "off",
@@ -74,7 +75,9 @@ const configuration: TSESLint.Linter.Config = {
 				"allowList": {
 					"ref": true,
 					"props": true,
+					"params": true,
 					"PropTypes": true,
+					"searchParams": true,
 				},
 			},
 		],
@@ -102,6 +105,7 @@ const configuration: TSESLint.Linter.Config = {
 		"import/extensions": [
 			"error",
 			{
+				"css": "always",
 				"json": "always",
 			},
 		],

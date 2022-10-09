@@ -44,6 +44,7 @@ var configuration = {
         "unicorn/prefer-switch": "off",
         "no-restricted-globals": "off",
         "function-paren-newline": "off",
+        "unicorn/prefer-ternary": "off",
         "promise/catch-or-return": "off",
         "no-mixed-spaces-and-tabs": "off",
         "implicit-arrow-linebreak": "off",
@@ -73,7 +74,9 @@ var configuration = {
                 "allowList": {
                     "ref": true,
                     "props": true,
+                    "params": true,
                     "PropTypes": true,
+                    "searchParams": true,
                 },
             },
         ],
@@ -101,6 +104,7 @@ var configuration = {
         "import/extensions": [
             "error",
             {
+                "css": "always",
                 "json": "always",
             },
         ],
