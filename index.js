@@ -55,6 +55,7 @@ var configuration = {
         "import/prefer-default-export": "off",
         "unicorn/prefer-query-selector": "off",
         "@typescript-eslint/comma-spacing": "off",
+        "unicorn/no-abusive-eslint-disable": "off",
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/prefer-regexp-exec": "off",
         "node/no-unsupported-features/es-syntax": "off",
