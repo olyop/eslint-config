@@ -13,7 +13,16 @@ const configuration: TSESLint.Linter.Config = {
 		"plugin:unicorn/recommended",
 		"prettier",
 	],
-	plugins: ["node", "json", "import", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
+	plugins: [
+		"sql",
+		"node",
+		"json",
+		"import",
+		"promise",
+		"prefer-arrow",
+		"unicorn",
+		"@typescript-eslint",
+	],
 	parserOptions: {
 		sourceType: "module",
 		ecmaVersion: "latest",
@@ -67,7 +76,6 @@ const configuration: TSESLint.Linter.Config = {
 		"node/no-unsupported-features/es-syntax": "off",
 		"unicorn/unicorn/consistent-function-scoping": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
-
 		"no-dupe-keys": "error",
 		"@typescript-eslint/no-use-before-define": "error",
 		"quote-props": ["error", "consistent-as-needed"],
@@ -92,6 +100,20 @@ const configuration: TSESLint.Linter.Config = {
 					"param": false,
 					"params": false,
 				},
+			},
+		],
+		"sql/format": [
+			"error",
+			{
+				"ignoreExpressions": false,
+				"ignoreInline": true,
+				"ignoreTagless": true,
+			},
+		],
+		"sql/no-unsafe-query": [
+			"error",
+			{
+				"allowLiteral": false,
 			},
 		],
 		"@typescript-eslint/no-invalid-void-type": [

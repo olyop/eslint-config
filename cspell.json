@@ -1,14 +1,4 @@
 {
 	"import": ["@oly_op/cspell-dict/cspell-ext.json"],
-	"ignorePaths": [
-		"index.js",
-		"custom-words.txt"
-	],
-	"dictionaries": [
-		"@oly_op/eslint-config"
-	],
-	"dictionaryDefinitions": [{
-		"name": "@oly_op/eslint-config",
-		"path": "./custom-words.txt"
-	}]
+	"words": ["TSES"]
 }
