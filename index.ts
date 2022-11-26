@@ -1,6 +1,7 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 
 const configuration: TSESLint.Linter.Config = {
+	plugins: ["node", "json", "import", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
 		"airbnb-typescript/base",
@@ -12,16 +13,6 @@ const configuration: TSESLint.Linter.Config = {
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
 		"plugin:unicorn/recommended",
 		"prettier",
-	],
-	plugins: [
-		"sql",
-		"node",
-		"json",
-		"import",
-		"promise",
-		"prefer-arrow",
-		"unicorn",
-		"@typescript-eslint",
 	],
 	parserOptions: {
 		sourceType: "module",
