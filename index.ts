@@ -39,6 +39,7 @@ const configuration: TSESLint.Linter.Config = {
 		"no-lonely-if": "off",
 		"comma-dangle": "off",
 		"default-case": "off",
+		"padded-blocks": "off",
 		"comma-spacing": "off",
 		"no-unused-vars": "off",
 		"no-else-return": "off",
@@ -148,15 +149,6 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"allowAsStatement": true,
-			},
-		],
-		"padded-blocks": [
-			"error",
-			{
-				"classes": "always",
-			},
-			{
-				"allowSingleLineBlocks": true,
 			},
 		],
 		"@typescript-eslint/no-floating-promises": [
