@@ -103,20 +103,6 @@ const configuration: TSESLint.Linter.Config = {
 				},
 			},
 		],
-		"sql/format": [
-			"error",
-			{
-				"ignoreExpressions": false,
-				"ignoreInline": true,
-				"ignoreTagless": true,
-			},
-		],
-		"sql/no-unsafe-query": [
-			"error",
-			{
-				"allowLiteral": false,
-			},
-		],
 		"@typescript-eslint/no-invalid-void-type": [
 			"error",
 			{
