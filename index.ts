@@ -153,7 +153,6 @@ const configuration: TSESLint.Linter.Config = {
 		"padded-blocks": [
 			"error",
 			{
-				"classes": "always",
 				"allowSingleLineBlocks": true,
 			},
 		],
