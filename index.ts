@@ -154,6 +154,7 @@ const configuration: TSESLint.Linter.Config = {
 			"error",
 			{
 				"classes": "always",
+				"allowSingleLineBlocks": true,
 			},
 		],
 		"@typescript-eslint/no-floating-promises": [
