@@ -20,8 +20,8 @@
 		"index.js"
 	],
 	"volta": {
-		"node": "19.0.0",
-		"npm": "8.19.2"
+		"node": "19.3.0",
+		"npm": "9.2.0"
 	},
 	"scripts": {
 		"delete-build": "del-cli index.js",
