@@ -40,6 +40,7 @@ const configuration: TSESLint.Linter.Config = {
 		"no-nested-ternary": "off",
 		"node/no-process-env": "off",
 		"no-use-before-define": "off",
+		"import/no-unresolved": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
 		"array-bracket-spacing": "off",
