@@ -1,15 +1,16 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+// import type { TSESLint } from "@typescript-eslint/utils";
 
-const configuration: TSESLint.Linter.Config = {
-	plugins: ["node", "json", "import", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
+// const configuration: TSESLint.Linter.ConfigType = {
+const configuration = {
+	plugins: ["node", "json", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
 		"airbnb-typescript/base",
 		"plugin:node/recommended",
 		"plugin:json/recommended",
-		"plugin:import/recommended",
 		"plugin:promise/recommended",
-		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/strict",
+		"plugin:@typescript-eslint/strict-type-checked",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking",
 		"plugin:unicorn/recommended",
 		"prettier",
@@ -40,7 +41,6 @@ const configuration: TSESLint.Linter.Config = {
 		"no-nested-ternary": "off",
 		"node/no-process-env": "off",
 		"no-use-before-define": "off",
-		"import/no-unresolved": "off",
 		"object-curly-newline": "off",
 		"no-restricted-syntax": "off",
 		"array-bracket-spacing": "off",
@@ -59,7 +59,6 @@ const configuration: TSESLint.Linter.Config = {
 		"unicorn/switch-case-braces": "off",
 		"lines-between-class-members": "off",
 		"unicorn/no-useless-undefined": "off",
-		"import/prefer-default-export": "off",
 		"unicorn/prefer-query-selector": "off",
 		"@typescript-eslint/comma-spacing": "off",
 		"unicorn/no-abusive-eslint-disable": "off",
@@ -110,19 +109,6 @@ const configuration: TSESLint.Linter.Config = {
 				"classPropertiesAllowed": false,
 			},
 		],
-		"node/no-missing-import": [
-			"off",
-			{
-				"tryExtensions": [".js", ".ts", ".jsx", ".tsx", ".d.ts"],
-			},
-		],
-		"import/extensions": [
-			"error",
-			{
-				"css": "always",
-				"json": "always",
-			},
-		],
 		"no-void": [
 			"error",
 			{
@@ -146,16 +132,6 @@ const configuration: TSESLint.Linter.Config = {
 			{
 				"args": "after-used",
 				"ignoreRestSiblings": true,
-			},
-		],
-		"import/order": [
-			"error",
-			{
-				"groups": [
-					["builtin", "external", "internal", "type"],
-					["parent", "sibling", "index"],
-				],
-				"newlines-between": "always-and-inside-groups",
 			},
 		],
 		"@typescript-eslint/naming-convention": [
@@ -207,14 +183,7 @@ const configuration: TSESLint.Linter.Config = {
 				"maxEOF": 1,
 			},
 		],
-		"import/no-extraneous-dependencies": [
-			"error",
-			{
-				"devDependencies": true,
-				"optionalDependencies": false,
-			},
-		],
 	},
 };
 
-module.exports = configuration;
+export default configuration;
