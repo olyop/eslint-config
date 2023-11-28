@@ -26,6 +26,7 @@
 	"scripts": {
 		"clean": "rimraf index.js",
 		"build": "tsc index.ts",
+		"prepublishOnly": "npm run clean && npm run build",
 		"postpublish": "npm run push",
 		"sync": "git checkout . && git remote update && git pull",
 		"push": "git add -A && git commit -m \"Update\" && git push"
