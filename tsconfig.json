@@ -1,7 +1,10 @@
 {
 	"extends": "@oly_op/tsconfig",
 	"compilerOptions": {
-		"moduleResolution": "Bundler"
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"target": "ES5",
+		"moduleDetection": "legacy"
 	},
 	"include": ["index.ts"]
 }
