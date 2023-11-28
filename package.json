@@ -3,7 +3,7 @@
 	"private": false,
 	"type": "commonjs",
 	"main": "index.js",
-	"version": "6.4.2",
+	"version": "6.5.0",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -47,7 +47,7 @@
 	"devDependencies": {
 		"@oly_op/cspell-dict": "1.1.2",
 		"@oly_op/prettier-config": "1.6.0",
-		"@oly_op/tsconfig": "1.1.0",
+		"@oly_op/tsconfig": "1.2.0",
 		"@types/node": "20.10.0",
 		"@typescript-eslint/eslint-plugin": "6.13.0",
 		"@typescript-eslint/parser": "6.13.0",

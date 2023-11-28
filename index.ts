@@ -48,6 +48,7 @@ const configuration = {
 		"no-restricted-globals": "off",
 		"function-paren-newline": "off",
 		"unicorn/prefer-ternary": "off",
+		"node/no-missing-import": "off",
 		"promise/catch-or-return": "off",
 		"unicorn/no-array-reduce": "off",
 		"no-mixed-spaces-and-tabs": "off",
