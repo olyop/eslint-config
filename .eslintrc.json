@@ -4,8 +4,6 @@
 		"project": "./tsconfig.json"
 	},
 	"rules": {
-		"quote-props": "off",
-		"unicorn/prefer-module": "off",
-		"import/no-import-module-exports": "off"
+		"quote-props": "off"
 	}
 }
