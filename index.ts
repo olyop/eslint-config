@@ -1,7 +1,6 @@
-// import type { TSESLint } from "@typescript-eslint/utils";
+import type { TSESLint } from "@typescript-eslint/utils";
 
-// const configuration: TSESLint.Linter.ConfigType = {
-const configuration = {
+const configuration: TSESLint.Linter.ConfigType = {
 	plugins: ["node", "json", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
@@ -59,6 +58,7 @@ const configuration = {
 		"unicorn/prefer-export-from": "off",
 		"unicorn/switch-case-braces": "off",
 		"lines-between-class-members": "off",
+		"import/prefer-default-export": "off",
 		"unicorn/no-useless-undefined": "off",
 		"unicorn/prefer-query-selector": "off",
 		"@typescript-eslint/comma-spacing": "off",

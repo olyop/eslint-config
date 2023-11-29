@@ -1,9 +1,0 @@
-{
-	"extends": "@oly_op",
-	"parserOptions": {
-		"project": "./tsconfig.json"
-	},
-	"rules": {
-		"quote-props": "off"
-	}
-}
