@@ -1,6 +1,7 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 
 const configuration: TSESLint.Linter.ConfigType = {
+	// const configuration = {
 	plugins: ["node", "json", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
@@ -27,6 +28,7 @@ const configuration: TSESLint.Linter.ConfigType = {
 		"no-tabs": "off",
 		"one-var": "off",
 		"no-console": "off",
+		"quote-props": "off",
 		"no-lonely-if": "off",
 		"comma-dangle": "off",
 		"default-case": "off",
@@ -70,11 +72,10 @@ const configuration: TSESLint.Linter.ConfigType = {
 		"unicorn/unicorn/consistent-function-scoping": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
 		"no-dupe-keys": "error",
-		"@typescript-eslint/no-use-before-define": "error",
-		"quote-props": ["error", "consistent-as-needed"],
 		"eol-last": ["error", "always"],
 		"@typescript-eslint/semi": ["error", "always"],
 		"@typescript-eslint/quotes": ["error", "double"],
+		"@typescript-eslint/no-use-before-define": "error",
 		"@typescript-eslint/comma-dangle": ["error", "always-multiline"],
 		"arrow-parens": ["error", "as-needed"],
 		"unicorn/prevent-abbreviations": [

@@ -1,4 +1,7 @@
 {
 	"extends": "@oly_op/tsconfig",
+	"compilerOptions": {
+		"skipLibCheck": true
+	},
 	"include": ["index.ts"]
 }
