@@ -66,6 +66,7 @@ const configuration = {
 		"unicorn/prefer-query-selector": "off",
 		"@typescript-eslint/comma-spacing": "off",
 		"unicorn/no-abusive-eslint-disable": "off",
+		"import/no-extraneous-dependencies": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"unicorn/no-array-callback-reference": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
