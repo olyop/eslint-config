@@ -1,7 +1,7 @@
-// import type { TSESLint } from "@typescript-eslint/utils";
+import type { TSESLint } from "@typescript-eslint/utils";
 
-// const configuration: TSESLint.Linter.ConfigType = {
-const configuration = {
+const configuration: TSESLint.Linter.ConfigType = {
+	// const configuration = {
 	plugins: ["node", "json", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
