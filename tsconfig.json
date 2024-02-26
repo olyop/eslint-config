@@ -3,5 +3,5 @@
 	"compilerOptions": {
 		"skipLibCheck": true
 	},
-	"include": ["index.ts"]
+	"include": ["eslint-config.ts"]
 }

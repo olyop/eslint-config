@@ -1,8 +1,7 @@
-// import type { TSESLint } from "@typescript-eslint/utils";
+import type { TSESLint } from "@typescript-eslint/utils";
 
-// const configuration: TSESLint.Linter.ConfigType = {
-const configuration = {
-	plugins: ["node", "json", "promise", "prefer-arrow", "unicorn", "@typescript-eslint"],
+const configuration: TSESLint.Linter.ConfigType = {
+	plugins: ["node", "json", "promise", "unicorn", "@typescript-eslint"],
 	extends: [
 		"airbnb-base",
 		"airbnb-typescript/base",
@@ -16,11 +15,12 @@ const configuration = {
 		"prettier",
 	],
 	parserOptions: {
+		project: "./tsconfig.json",
 		sourceType: "module",
 		ecmaVersion: "latest",
 	},
 	env: {
-		es2022: true,
+		es2024: true,
 	},
 	rules: {
 		"semi": "off",
@@ -39,7 +39,6 @@ const configuration = {
 		"unicorn/no-null": "off",
 		"no-array-reduce": "off",
 		"no-await-in-loop": "off",
-		"import/extensions": "off",
 		"no-nested-ternary": "off",
 		"node/no-process-env": "off",
 		"no-use-before-define": "off",
@@ -61,12 +60,10 @@ const configuration = {
 		"unicorn/prefer-export-from": "off",
 		"unicorn/switch-case-braces": "off",
 		"lines-between-class-members": "off",
-		"import/prefer-default-export": "off",
 		"unicorn/no-useless-undefined": "off",
 		"unicorn/prefer-query-selector": "off",
 		"@typescript-eslint/comma-spacing": "off",
 		"unicorn/no-abusive-eslint-disable": "off",
-		"import/no-extraneous-dependencies": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"unicorn/no-array-callback-reference": "off",
 		"@typescript-eslint/prefer-regexp-exec": "off",
@@ -103,14 +100,6 @@ const configuration = {
 			{
 				"allowAsThisParameter": false,
 				"allowInGenericTypeArguments": true,
-			},
-		],
-		"prefer-arrow/prefer-arrow-functions": [
-			"warn",
-			{
-				"disallowPrototype": true,
-				"singleReturnOnly": false,
-				"classPropertiesAllowed": false,
 			},
 		],
 		"no-void": [

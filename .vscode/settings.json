@@ -1,5 +1,6 @@
 {
 	"files.exclude": {
-		"index.js": true
+		".eslintrc.js": true,
+		"eslint-config.js": true
 	}
 }

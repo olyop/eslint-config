@@ -2,8 +2,8 @@
 	"license": "MIT",
 	"private": false,
 	"type": "commonjs",
-	"main": "index.js",
-	"version": "6.6.0",
+	"main": ".eslintrc.js",
+	"version": "6.7.0",
 	"name": "@oly_op/eslint-config",
 	"description": "@oly_op/eslint-config",
 	"bugs": "https://github.com/olyop/eslint-config/issues",
@@ -17,18 +17,19 @@
 		"url": "git+https://github.com/olyop/eslint-config.git"
 	},
 	"files": [
-		"index.js"
+		".eslintrc.js"
 	],
 	"volta": {
 		"node": "21.2.0",
 		"npm": "10.2.4"
 	},
 	"scripts": {
-		"clean": "rimraf index.js",
-		"build": "tsc index.ts",
-		"postpublish": "npm run push",
-		"sync": "git checkout . && git remote update && git pull",
-		"push": "git add -A && git commit -m \"Update\" && git push"
+		"clean": "rimraf .eslintrc.js eslint-config.js",
+		"compile-to-cjs": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.writeFileSync(filename, fs.readFileSync(filename).toString().replace('exports.default', 'module.exports'));\"",
+		"compile": "tsc && npm run compile-to-cjs",
+		"rename": "node -e \"require('fs').renameSync('eslint-config.js', '.eslintrc.js');\"",
+		"build": "npm run clean && npm run compile && npm run rename",
+		"prepublishOnly": "npm run build"
 	},
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": "7.0.2",
@@ -39,7 +40,6 @@
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-prefer-arrow": "1.2.3",
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-unicorn": "51.0.1"
 	},
@@ -57,10 +57,15 @@
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-prefer-arrow": "1.2.3",
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-unicorn": "51.0.1",
 		"npm-check-updates": "16.14.15",
 		"rimraf": "5.0.5"
+	},
+	"overrides": {
+		"eslint-config-airbnb-typescript": {
+			"@typescript-eslint/eslint-plugin": "7.0.2",
+			"@typescript-eslint/parser": "7.0.2"
+		}
 	}
 }
