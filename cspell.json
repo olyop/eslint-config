@@ -1,9 +1,5 @@
 {
-	"import": [
-		"@oly_op/cspell-dict/cspell-ext.json"
-	],
-	"words": [
-		"postpublish",
-		"TSES"
-	]
+	"import": ["@oly_op/cspell-dict/cspell-ext.json"],
+	"ignorePaths": ["node_modules"],
+	"words": ["postpublish", "TSES"]
 }

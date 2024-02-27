@@ -1,71 +1,81 @@
 {
-	"license": "MIT",
-	"private": false,
 	"type": "commonjs",
-	"main": ".eslintrc.js",
-	"version": "6.7.0",
 	"name": "@oly_op/eslint-config",
+	"version": "6.7.15",
 	"description": "@oly_op/eslint-config",
-	"bugs": "https://github.com/olyop/eslint-config/issues",
 	"homepage": "https://github.com/olyop/eslint-config/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/olyop/eslint-config/issues",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"license": "MIT",
 	"author": {
 		"name": "Oliver Plummer",
 		"email": "oliver.plummer@outlook.com"
 	},
+	"files": [
+		"index.js"
+	],
+	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/olyop/eslint-config.git"
 	},
-	"files": [
-		".eslintrc.js"
-	],
-	"volta": {
-		"node": "21.2.0",
-		"npm": "10.2.4"
-	},
 	"scripts": {
-		"clean": "rimraf .eslintrc.js eslint-config.js",
+		"clean": "rimraf index.js .eslintrc.js eslint-config.js",
 		"compile-to-cjs": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.writeFileSync(filename, fs.readFileSync(filename).toString().replace('exports.default', 'module.exports'));\"",
-		"compile": "tsc && npm run compile-to-cjs",
-		"rename": "node -e \"require('fs').renameSync('eslint-config.js', '.eslintrc.js');\"",
-		"build": "npm run clean && npm run compile && npm run rename",
-		"prepublishOnly": "npm run build"
-	},
-	"peerDependencies": {
-		"@typescript-eslint/eslint-plugin": "7.0.2",
-		"@typescript-eslint/parser": "7.0.2",
-		"eslint": "8.57.0",
-		"eslint-config-airbnb-base": "15.0.0",
-		"eslint-config-airbnb-typescript": "17.1.0",
-		"eslint-config-prettier": "9.1.0",
-		"eslint-plugin-json": "3.1.0",
-		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-promise": "6.1.1",
-		"eslint-plugin-unicorn": "51.0.1"
+		"compile-remove-first-two-lines": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.writeFileSync(filename, fs.readFileSync(filename).toString().split('\\n').slice(2).join('\\n'));\"",
+		"compile": "tsc && npm run compile-to-cjs && npm run compile-remove-first-two-lines",
+		"duplicate": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.copyFileSync(filename, 'index.js'); fs.copyFileSync(filename, '.eslintrc.js');\"",
+		"build": "npm run clean && npm run compile && npm run duplicate",
+		"increment-version": "npm version patch --no-git-tag-version",
+		"prepublishOnly": "npm run increment-version && npm run build"
 	},
 	"devDependencies": {
 		"@oly_op/cspell-dict": "1.1.5",
 		"@oly_op/prettier-config": "1.8.2",
 		"@oly_op/tsconfig": "1.2.0",
 		"@types/node": "20.11.20",
-		"@typescript-eslint/eslint-plugin": "7.0.2",
-		"@typescript-eslint/parser": "7.0.2",
-		"@typescript-eslint/utils": "7.0.2",
+		"@typescript-eslint/eslint-plugin": "7.1.0",
+		"@typescript-eslint/parser": "7.1.0",
+		"@typescript-eslint/utils": "7.1.0",
 		"eslint": "8.57.0",
 		"eslint-config-airbnb-base": "15.0.0",
 		"eslint-config-airbnb-typescript": "17.1.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-prettier": "5.1.3",
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-unicorn": "51.0.1",
 		"npm-check-updates": "16.14.15",
 		"rimraf": "5.0.5"
 	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "7.1.0",
+		"@typescript-eslint/parser": "7.1.0",
+		"eslint": "8.57.0",
+		"eslint-config-airbnb-base": "15.0.0",
+		"eslint-config-airbnb-typescript": "17.1.0",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-json": "3.1.0",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-prettier": "5.1.3",
+		"eslint-plugin-promise": "6.1.1",
+		"eslint-plugin-unicorn": "51.0.1"
+	},
 	"overrides": {
 		"eslint-config-airbnb-typescript": {
-			"@typescript-eslint/eslint-plugin": "7.0.2",
-			"@typescript-eslint/parser": "7.0.2"
+			"@typescript-eslint/eslint-plugin": "7.1.0",
+			"@typescript-eslint/parser": "7.1.0"
 		}
+	},
+	"engines": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"volta": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
 	}
 }

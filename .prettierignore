@@ -1,2 +1,4 @@
+test.ts
+eslint-config.js
+.eslintrc.js
 index.js
-node_modules
