@@ -1,7 +1,7 @@
 {
 	"type": "commonjs",
 	"name": "@oly_op/eslint-config",
-	"version": "6.7.16",
+	"version": "6.7.17",
 	"description": "@oly_op/eslint-config",
 	"homepage": "https://github.com/olyop/eslint-config/blob/master/README.md",
 	"bugs": {
@@ -29,7 +29,8 @@
 		"duplicate": "node -e \"const fs = require('fs'), filename = 'eslint-config.js'; fs.copyFileSync(filename, 'index.js'); fs.copyFileSync(filename, '.eslintrc.js');\"",
 		"build": "npm run clean && npm run compile && npm run duplicate",
 		"increment-version": "npm version patch --no-git-tag-version",
-		"prepublishOnly": "npm run increment-version && npm run build"
+		"prepublishOnly": "npm run increment-version && npm run build",
+		"postpublish": "git add -A && git commit -m 'Publish' && git push"
 	},
 	"devDependencies": {
 		"@oly_op/cspell-dict": "1.1.5",
