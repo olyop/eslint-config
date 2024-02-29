@@ -55,6 +55,7 @@ const configuration: TSESLint.Linter.ConfigType = {
 		"unicorn/no-array-reduce": "off",
 		"no-mixed-spaces-and-tabs": "off",
 		"implicit-arrow-linebreak": "off",
+		"unicorn/no-nested-ternary": "off",
 		"@typescript-eslint/indent": "off",
 		"unicorn/no-array-for-each": "off",
 		"node/no-unpublished-import": "off",
