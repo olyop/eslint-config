@@ -1,7 +1,7 @@
 {
 	"type": "commonjs",
 	"name": "@oly_op/eslint-config",
-	"version": "6.7.18",
+	"version": "6.7.19",
 	"description": "@oly_op/eslint-config",
 	"homepage": "https://github.com/olyop/eslint-config/blob/master/README.md",
 	"bugs": {
@@ -33,16 +33,16 @@
 		"postpublish": "git add -A && git commit -m 'Publish' && git push"
 	},
 	"devDependencies": {
-		"@oly_op/cspell-dict": "1.1.5",
+		"@oly_op/cspell-dict": "1.1.9",
 		"@oly_op/prettier-config": "1.8.2",
-		"@oly_op/tsconfig": "1.2.0",
-		"@types/node": "20.11.20",
+		"@oly_op/tsconfig": "1.2.1",
+		"@types/node": "20.11.24",
 		"@typescript-eslint/eslint-plugin": "7.1.0",
 		"@typescript-eslint/parser": "7.1.0",
 		"@typescript-eslint/utils": "7.1.0",
 		"eslint": "8.57.0",
 		"eslint-config-airbnb-base": "15.0.0",
-		"eslint-config-airbnb-typescript": "17.1.0",
+		"eslint-config-airbnb-typescript": "18.0.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-json": "3.1.0",
 		"eslint-plugin-node": "11.1.0",
@@ -64,12 +64,6 @@
 		"eslint-plugin-prettier": "5.1.3",
 		"eslint-plugin-promise": "6.1.1",
 		"eslint-plugin-unicorn": "51.0.1"
-	},
-	"overrides": {
-		"eslint-config-airbnb-typescript": {
-			"@typescript-eslint/eslint-plugin": "7.1.0",
-			"@typescript-eslint/parser": "7.1.0"
-		}
 	},
 	"engines": {
 		"node": "21.6.2",
